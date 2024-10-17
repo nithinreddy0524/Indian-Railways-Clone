@@ -26,10 +26,11 @@ function startClock() {
     updateClock();
 }
 
-// Call startClock when the window loads
-window.onload = startClock;
 
 window.onload = function() {
+
+    // Call startClock when the window loads
+    startClock();
     setTimeout(function() {
         document.getElementById("customPopup").style.display = "flex"; // Show the custom popup
     }, 2000);
